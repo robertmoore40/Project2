@@ -1,0 +1,222 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" id="nav-title" class="brand-logo left">Ahoy, matey !</a>
+        <ul class="right">
+            <li><a id="add-review" class="waves-effect waves-light btn">Set Sail<i
+                        class="material-icons right">directions_boat</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 ll12 center" id="main-title">
+            <h1 id="main-title">Rising Tide Reviews</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 valign-wrapper" id="movie-dock">
+            <h3 id="dock-title">Movies Dock</h3>
+            <!-- Dropdown Trigger -->
+            <a data-offset="0" data-sort="Popular" id="sort-btn" class='dropdown-trigger btn' data-target='movie-sort'>Sort By</a>
+
+            <!-- Dropdown Structure -->
+            <ul id='movie-sort' class='dropdown-content'>
+                <li><a>Popular</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a>New</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a>Year</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a>Title</a></li>
+                <li class="divider" tabindex="-1"></li>
+            </ul>
+
+            <h5 id="sort-name">Popular</h5>
+
+            {{!-- <div id="small-nav-btns" class="hide-on-large-only right-align">
+                <button id="back-btn" class="btn transparent black-text">Back
+                <i class="material-icons left">arrow_back</i></button>
+            <button id="next-btn" class="btn transparent black-text">Next
+                <i class="material-icons right">arrow_forward</i>
+            </button>
+            </div> --}}
+            
+        </div>
+    </div>
+
+    <div class="row flexbox" id="movie-row">
+
+        <div data-imdbid="" class="card col s12 m5 l2 sticky-action main-card-0" id="results-card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img id="poster-img" class="activator" src="">
+            </div>
+            <div id="results-content" class="card-content">
+
+                <div id="movie-title-div" class="center-align valign-wrapper">
+                    <p id="movie-title"></p>
+                </div>
+
+                <div id="boats-div" class="center-align">
+                    <a id="up-boat"><i class="material-icons left up-boat" data-imdbid="">keyboard_arrow_up</i></a>
+                    <span id="boat-value"></span>
+                    <a id="down-boat"><i class="material-icons right down-boat"
+                            data-imdbid="">keyboard_arrow_down</i></a>
+
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span id="movie-title" class="card-title grey-text text-darken-4"><i
+                        class="material-icons right">close</i></span>
+                <ul>
+                    <li id="movie-year">Year:</li>
+                    <li class="rating">Rating: </li>
+                    <br>
+                    <li class="plot">Plot: </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div data-imdbid="" class="card col s12 m5 l2 sticky-action main-card-1" id="results-card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img id="poster-img" class="activator" src="">
+            </div>
+            <div id="results-content" class="card-content">
+
+                <div id="movie-title-div" class="center-align valign-wrapper">
+                    <p id="movie-title"></p>
+                </div>
+
+                <div id="boats-div" class="center-align">
+                    <a id="up-boat"><i class="material-icons left up-boat" data-imdbid="">keyboard_arrow_up</i></a>
+                    <span id="boat-value"></span>
+                    <a id="down-boat"><i class="material-icons right down-boat"
+                            data-imdbid="">keyboard_arrow_down</i></a>
+
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span id="movie-title" class="card-title grey-text text-darken-4"><i
+                        class="material-icons right">close</i></span>
+                <ul>
+                    <li id="movie-year">Year:</li>
+                    <li class="rating">Rating: </li>
+                    <br>
+                    <li class="plot">Plot: </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div data-imdbid="" class="card col s12 m5 l2 sticky-action main-card-2" id="results-card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img id="poster-img" class="activator" src="">
+            </div>
+            <div id="results-content" class="card-content">
+
+                <div id="movie-title-div" class="center-align valign-wrapper">
+                    <p id="movie-title"></p>
+                </div>
+
+                <div id="boats-div" class="center-align">
+                    <a id="up-boat"><i class="material-icons left up-boat" data-imdbid="">keyboard_arrow_up</i></a>
+                    <span id="boat-value"></span>
+                    <a id="down-boat"><i class="material-icons right down-boat"
+                            data-imdbid="">keyboard_arrow_down</i></a>
+
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span id="movie-title" class="card-title grey-text text-darken-4"><i
+                        class="material-icons right">close</i></span>
+                <ul>
+                    <li id="movie-year">Year:</li>
+                    <li class="rating">Rating: </li>
+                    <br>
+                    <li class="plot">Plot: </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div data-imdbid="" class="card col s12 m5 l2 sticky-action main-card-3" id="results-card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img id="poster-img" class="activator" src="">
+            </div>
+            <div id="results-content" class="card-content">
+
+                <div id="movie-title-div" class="center-align valign-wrapper">
+                    <p id="movie-title"></p>
+                </div>
+
+                <div id="boats-div" class="center-align">
+                    <a id="up-boat"><i class="material-icons left up-boat" data-imdbid="">keyboard_arrow_up</i></a>
+                    <span id="boat-value"></span>
+                    <a id="down-boat"><i class="material-icons right down-boat"
+                            data-imdbid="">keyboard_arrow_down</i></a>
+
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span id="movie-title" class="card-title grey-text text-darken-4"><i
+                        class="material-icons right">close</i></span>
+                <ul>
+                    <li id="movie-year">Year:</li>
+                    <li class="rating">Rating: </li>
+                    <br>
+                    <li class="plot">Plot: </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div data-imdbid="" class="card col s12 m5 l2 sticky-action main-card-4" id="results-card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img id="poster-img" class="center activator" src="">
+            </div>
+            <div id="results-content" class="card-content">
+
+                <div id="movie-title-div" class="center-align valign-wrapper">
+                    <p id="movie-title"></p>
+                </div>
+
+                <div id="boats-div" class="center-align">
+                    <a id="up-boat"><i class="material-icons left up-boat" data-imdbid="">keyboard_arrow_up</i></a>
+                    <span id="boat-value"></span>
+                    <a id="down-boat"><i class="material-icons right down-boat"
+                            data-imdbid="">keyboard_arrow_down</i></a>
+
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span id="movie-title" class="card-title grey-text text-darken-4"><i
+                        class="material-icons right">close</i></span>
+                <ul>
+                    <li id="movie-year">Year:</li>
+                    <li class="rating">Rating: </li>
+                    <br>
+                    <li class="plot">Plot: </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l12 center">
+            <button id="back-btn" class="btn transparent black-text">Back
+                <i class="material-icons left">arrow_back</i></button>
+            <button id="next-btn" class="btn transparent black-text">Next
+                <i class="material-icons right">arrow_forward</i>
+            </button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
